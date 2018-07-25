@@ -286,7 +286,6 @@ public class Main_Controller implements Initializable, ButtonDesign {
                         v.setOnMouseReleased(event -> mouseExit());
 
                         StackPanes.get(v).setOnDragDropped(event -> dragDropped(event, v));
-                        v.setOnDragDropped(event -> dragDropped(event, v));
 
 
                         StackPanes.get(v).setOnDragExited(event -> StackPanes.get(v).setStyle("-fx-background-color: white;"));
