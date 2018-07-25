@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="windowMain" maxHeight="746.0" maxWidth="400.0" minHeight="746.0" minWidth="400.0" prefHeight="746.0" prefWidth="400.0" style="-fx-background-color: #FFFFFF; -fx-border-color: grey;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Main_Controller">
+    <TextField fx:id="mainPath" focusTraversable="false" layoutX="13.0" layoutY="14.0" prefHeight="25.0" prefWidth="373.0" promptText="Pfad" style="-fx-background-color: white; -fx-border-color: grey;" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="14.0" />
+    <CheckBox fx:id="generateDE" focusTraversable="false" layoutX="15.0" layoutY="47.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Deutsch" AnchorPane.leftAnchor="13.0">
+        <cursor>
+          <Cursor fx:constant="HAND" />
+        </cursor>
+    </CheckBox>
+    <CheckBox fx:id="generateEN" focusTraversable="false" layoutX="15.0" layoutY="99.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Englisch" AnchorPane.leftAnchor="13.0">
+        <cursor>
+          <Cursor fx:constant="HAND" />
+        </cursor>
+    </CheckBox>
+    <TextField fx:id="pathDE" focusTraversable="false" layoutX="13.0" layoutY="66.0" prefHeight="25.0" prefWidth="373.0" promptText="Deutscher Datei Name" style="-fx-background-color: white; -fx-border-color: grey;" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" />
+    <TextField fx:id="pathEN" focusTraversable="false" layoutX="13.0" layoutY="118.0" prefHeight="25.0" prefWidth="373.0" promptText="Englischer Datei Name" style="-fx-background-color: white; -fx-border-color: grey;" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" />
+    <StackPane fx:id="dndZone" layoutX="15.0" layoutY="151.0" opacity="0.59" prefHeight="141.0" prefWidth="374.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0">
+        <opaqueInsets>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+        </opaqueInsets>
+        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Bilder hier rein ziehen" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="370.13671875" StackPane.alignment="CENTER" />
+    </StackPane>
+    <GridPane fx:id="gridpane" alignment="BOTTOM_RIGHT" layoutX="15.0" layoutY="300.0" prefHeight="364.0" prefWidth="374.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+        <StackPane fx:id="gridBackGround00" alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <children>
+              <ImageView fx:id="imageView00" fitHeight="67.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+         </children></StackPane>
+        <StackPane fx:id="gridBackGround01" alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <children>
+              <ImageView fx:id="imageView01" fitHeight="67.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+         </children></StackPane>
+        <StackPane fx:id="gridBackGround02" alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2">
+         <children>
+              <ImageView fx:id="imageView02" fitHeight="67.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+         </children></StackPane>
+        <StackPane fx:id="gridBackGround10" alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+              <ImageView fx:id="imageView10" fitHeight="67.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+         </children></StackPane>
+        <StackPane fx:id="gridBackGround11" alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+              <ImageView fx:id="imageView11" fitHeight="67.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+         </children></StackPane>
+        <StackPane fx:id="gridBackGround12" alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+              <ImageView fx:id="imageView12" fitHeight="67.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+         </children></StackPane>
+        <StackPane fx:id="gridBackGround20" alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="2">
+         <children>
+              <ImageView fx:id="imageView20" fitHeight="67.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+         </children></StackPane>
+        <StackPane fx:id="gridBackGround21" alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+              <ImageView fx:id="imageView21" fitHeight="67.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+         </children></StackPane>
+        <StackPane fx:id="gridBackGround22" alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <children>
+              <ImageView fx:id="imageView22" fitHeight="67.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+         </children></StackPane>
+        <StackPane fx:id="gridBackGround30" alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="3">
+         <children>
+              <ImageView fx:id="imageView30" fitHeight="67.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+         </children></StackPane>
+        <StackPane fx:id="gridBackGround31" alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+              <ImageView fx:id="imageView31" fitHeight="67.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+         </children></StackPane>
+        <StackPane fx:id="gridBackGround32" alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <children>
+              <ImageView fx:id="imageView32" fitHeight="67.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+         </children></StackPane>
+        <StackPane fx:id="gridBackGround40" alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="4">
+         <children>
+              <ImageView fx:id="imageView40" fitHeight="67.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+         </children></StackPane>
+        <StackPane fx:id="gridBackGround41" alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <children>
+              <ImageView fx:id="imageView41" fitHeight="67.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+         </children></StackPane>
+        <StackPane fx:id="gridBackGround42" alignment="BOTTOM_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <children>
+              <ImageView fx:id="imageView42" fitHeight="67.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER" />
+         </children></StackPane>
+    </GridPane>
+    <Button fx:id="buttonCreate" defaultButton="true" focusTraversable="false" layoutX="13.0" layoutY="672.0" mnemonicParsing="false" onAction="#generateData" prefHeight="25.0" prefWidth="373.0" style="-fx-background-color: #FFFFFF; -fx-border-color: grey;" text="Erzeugen" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="671.0">
+        <cursor>
+          <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+   <Button fx:id="buttonDelete" defaultButton="true" focusTraversable="false" layoutX="13.0" layoutY="705.0" mnemonicParsing="false" onAction="#deleteData" prefHeight="25.0" prefWidth="373.0" style="-fx-background-color: #FFFFFF; -fx-border-color: grey;" text="Löschen" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="705.0">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+</AnchorPane>
